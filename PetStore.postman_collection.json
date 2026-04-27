@@ -1,0 +1,241 @@
+{
+  "info": {
+    "_postman_id": "9a8ce4c9-f246-479a-a02b-fe69dbfe5ebc",
+    "name": "PetStore",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54193107",
+    "_collection_link": "https://go.postman.co/collection/54193107-9a8ce4c9-f246-479a-a02b-fe69dbfe5ebc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Folder",
+      "item": [
+        {
+          "name": "status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/findByStatus?status=available",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "findByStatus"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "available",
+                  "description": "pending, sold"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add_pet",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"name\": \"Микки\",\r\n\t\"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "id",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Томас\",\r\n    \"status\": \"sold\"\r\n}"
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/pet/9223372036854775807",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "pet",
+                "9223372036854775807"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "user_login",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/user/login?username=Барбос",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "user",
+                "login"
+              ],
+              "query": [
+                {
+                  "key": "username",
+                  "value": "Барбос"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "username",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/user/Mikky",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "user",
+                "Mikky"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "add_user",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\": \"Mikky\",\r\n    \"firstName\": \"Mik\",\r\n    \"lastName\": \"Ruben\",\r\n    \"email\": \"mikky@example.com\",\r\n    \"password\": \"qwerty\",\r\n    \"phone\": \"123456789\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/user",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "user"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "update_user",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"MikkyNew\",\r\n    \"firstName\": \"Mik\",\r\n    \"lastName\": \"Ruben\",\r\n    \"email\": \"mikky_NEW@example.com\",\r\n    \"password\": \"qwerty\",\r\n    \"phone\": \"987654321\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/MikkyNew",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "MikkyNew"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"Mikky\",\r\n    \"firstName\": \"Mik\",\r\n    \"lastName\": \"Ruben\",\r\n    \"email\": \"mikky_NEW@example.com\",\r\n    \"password\": \"qwerty\",\r\n    \"phone\": \"987654321\"\r\n}"
+        },
+        "url": {
+          "raw": "https://petstore.swagger.io/v2/user/MikkyNew",
+          "protocol": "https",
+          "host": [
+            "petstore",
+            "swagger",
+            "io"
+          ],
+          "path": [
+            "v2",
+            "user",
+            "MikkyNew"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
