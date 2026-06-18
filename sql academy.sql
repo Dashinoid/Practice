@@ -191,3 +191,63 @@ SELECT DISTINCT Subject.name AS subjects FROM Teacher
 JOIN Schedule ON Teacher.id = Schedule.teacher
 JOIN Subject ON Schedule.subject = Subject.id
 WHERE Teacher.last_name = 'Romashkin' AND Teacher.first_name LIKE 'P%' AND Teacher.middle_name LIKE 'P%'
+
+-- Change the name "Andie Quincey" to "Andie Anthony".
+UPDATE FamilyMembers
+SET FamilyMembers.member_name = 'Andie Anthony'
+WHERE FamilyMembers.member_name = 'Andie Quincey';
+
+-- Delete all flights departing from Moscow.
+DELETE FROM Trip
+WHERE Trip.town_from = 'Moscow';
+
+-- Display room ID and internet availability (YES/NO).
+SELECT Rooms.id,
+CASE
+WHEN Rooms.has_internet = 1 THEN 'YES'
+ELSE 'NO'
+END AS has_internet
+FROM Rooms;
+
+-- Add a new product "Cheese" with type "food".
+INSERT INTO Goods (good_id, good_name, type)
+SELECT (SELECT COUNT(*) + 1 FROM Goods) AS good_id,
+'Cheese' AS good_name, good_type_id AS type FROM GoodTypes
+WHERE good_type_name = 'food';
+
+-- Delete all family members with the surname "Quincey".
+DELETE FROM FamilyMembers
+WHERE FamilyMembers.member_name LIKE '%Quincey';
+
+-- Move all classes schedule 30 minutes forward.
+UPDATE Timepair
+SET start_pair = start_pair + INTERVAL 30 MINUTE,
+    end_pair = end_pair + INTERVAL 30 MINUTE;
+
+-- Delete companies with the minimum number of flights.
+DELETE FROM Company
+WHERE Company.id IN (SELECT company FROM Trip
+GROUP BY company
+HAVING COUNT(*) = (SELECT MIN(flight_count) 
+FROM (SELECT COUNT(*) AS flight_count FROM Trip
+GROUP BY company) AS min_flights));
+
+-- Add a review from George Clooney with rating 5.
+INSERT INTO Reviews (id, reservation_id, rating)
+SELECT (SELECT COUNT(*) + 1 FROM Reviews), 
+Reservations.id, 5 FROM Reservations
+JOIN Rooms ON Reservations.room_id = Rooms.id
+JOIN Users ON Reservations.user_id = Users.id
+WHERE Rooms.address = '11218, Friel Place, New York'
+AND Users.name = 'George Clooney'
+LIMIT 1;
+
+-- Display teachers who taught in all 11th grade classes.
+SELECT Teacher.id AS Teacher FROM Teacher
+JOIN Schedule ON Teacher.id = Schedule.teacher
+JOIN Class ON Schedule.class = Class.id
+WHERE Class.name LIKE '11%'
+GROUP BY Teacher.id
+HAVING COUNT(DISTINCT Class.id) = ( SELECT COUNT(*) 
+FROM Class 
+WHERE Class.name LIKE '11%');
