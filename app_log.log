@@ -1,0 +1,88 @@
+07-05 20:23:30.160   677   742 E PackageManager: Error occurred while checking alignment of package : com.qrolic.reminderapp
+07-05 20:23:30.222   677   742 D BackupManagerService: [UserID:0] restoreAtInstall pkg=com.qrolic.reminderapp token=3 restoreSet=0
+07-05 20:23:30.225   677   742 I PermissionControllerManager: Applying staged permission backup for com.qrolic.reminderapp, user 0
+07-05 20:23:30.225   677   742 I PackageManager: installation completed for package:com.qrolic.reminderapp. Final code path: /data/app/~~hBtfUFzlSytEIJTbgSxxZA==/com.qrolic.reminderapp-Ncv9-v3vb0Zv1c0xC9TbuA==
+07-05 20:23:30.272  1426  1512 D SessionCommitReceiver: Removing unneeded PromiseIcon for package: com.qrolic.reminderapp, install reason: 0, alreadyAddedPromiseIcon: false
+07-05 20:23:30.283   677  1100 D ShortcutService: adding package: com.qrolic.reminderapp userId=0
+07-05 20:23:30.283   677  1110 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10229, mPackageName='com.qrolic.reminderapp, mAppProcessToken='null'}
+07-05 20:23:30.294   677   677 D AS.AudioService: received android.intent.action.PACKAGE_ADDED replacing: false archival: false for package com.qrolic.reminderapp with uid 10229
+07-05 20:23:30.299  1301  1301 D CarrierSvcBindHelper: onPackageAdded: com.qrolic.reminderapp
+07-05 20:23:30.304   528   539 D NativePermissionController: updatePackagesForUid, UidPackageState{uid: 10229, packageStates: [PackageState{packageName: com.qrolic.reminderapp, targetSdk: 30, isPlaybackCaptureAllowed: true, pccId: -1}]}
+07-05 20:23:30.311  1301  1464 I SatelliteAppTracker: onPackageAdded : com.qrolic.reminderapp
+07-05 20:23:30.312  1301  1464 D SatelliteAppTracker: packageName: com.qrolic.reminderapp, value: null
+07-05 20:23:30.314  1150  1150 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.qrolic.reminderapp, current user: UserHandle{0}, packageChangeEvent: NEW_INSTALL, intent user: UserHandle{0}
+07-05 20:23:30.316   677  1131 I PermissionControllerManager: Staged permission restore completed for com.qrolic.reminderapp. More pending: false
+07-05 20:23:30.344  1301  1397 V MessagingReadRestrictionAllowlistMonitor: onBroadcastReceived: No AppOp changes for package: com.qrolic.reminderapp
+07-05 20:23:30.406  1301  1581 D ImsResolver: maybeAddedImsService, packageName: com.qrolic.reminderapp
+07-05 20:23:30.406  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:23:30.408  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:23:30.425   677   712 D LauncherAppsService: onPackageAdded: user=UserHandle{0}, packageName=com.qrolic.reminderapp
+07-05 20:23:30.426   677   712 D LauncherAppsService: onPackageAdded: Skipping - package filtered for user=UserHandle{0}, packageName=com.qrolic.reminderapp
+07-05 20:23:30.426   677   712 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=com.qrolic.reminderapp
+07-05 20:23:30.426   677   712 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=com.qrolic.reminderapp
+07-05 20:23:30.426  1426  1438 D LauncherApps: onPackageAdded 0,com.qrolic.reminderapp
+07-05 20:23:30.426  1885  2528 D LauncherApps: onPackageAdded 0,com.qrolic.reminderapp
+07-05 20:23:30.430  1885  1885 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.qrolic.reminderapp], userId:[0], reason:[package is added.].
+07-05 20:23:30.431   677   712 D LauncherAppsService: onPackageAdded: triggering onPackageAdded for user=UserHandle{0}, packageName=com.qrolic.reminderapp
+07-05 20:23:30.431  1149  1168 D LauncherApps: onPackageAdded 0,com.qrolic.reminderapp
+07-05 20:23:30.431  1426  1512 D LauncherAppsCallbackImpl: onPackageAdded triggered for packageName=com.qrolic.reminderapp, user=UserHandle{0}
+07-05 20:23:30.452   677   677 I BackupManagerService: No delayed restore requests for the given dependency: com.qrolic.reminderapp
+07-05 20:23:30.484  1301  1301 D CarrierSvcBindHelper: onPackageModified: com.qrolic.reminderapp
+07-05 20:23:30.561  1885  8368 I AiAiEcho: AppIndexer Package:[com.qrolic.reminderapp] UserProfile:[0] Enabled:[true].
+07-05 20:23:30.569  1885  8368 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.qrolic.reminderapp], userId:[0], reason:[package is updated.].
+07-05 20:23:30.570   677  1100 D ShortcutService: changing package: com.qrolic.reminderapp userId=0
+07-05 20:23:30.589  1301  1464 I SatelliteAppTracker: onPackageModified : com.qrolic.reminderapp
+07-05 20:23:30.598  1301  1464 D SatelliteAppTracker: packageName: com.qrolic.reminderapp, value: null
+07-05 20:23:30.661  1301  1397 V MessagingReadRestrictionAllowlistMonitor: onBroadcastReceived: No AppOp changes for package: com.qrolic.reminderapp
+07-05 20:23:30.823  1301  1581 D ImsResolver: maybeAddedImsService, packageName: com.qrolic.reminderapp
+07-05 20:23:30.823  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:23:30.829  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:23:30.854  1301  1301 D SatelliteController: packageStateChanged: package:com.qrolic.reminderapp defaultSmsPackageName: com.google.android.apps.messaging satelliteGatewayServicePackageName: 
+07-05 20:23:30.925  6638  6713 I Finsky  : [58] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:23:30.984  6443  8375 I ProximityAuth: [RecentAppsMediator] Package added: (user=UserHandle{0}) com.qrolic.reminderapp
+07-05 20:23:31.023  6638  6712 I Finsky  : [57] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:23:31.255  6638  6714 I Finsky  : [59] AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:23:31.257  6638  6714 I Finsky  : [59] ItemStore: Not cached: com.qrolic.reminderapp
+07-05 20:23:31.275  6638  6714 I Finsky  : [59] AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:23:31.278  6638  6716 I Finsky  : [61] ItemStore: Not cached: com.qrolic.reminderapp
+07-05 20:23:31.288  6638  6716 E Finsky  : [61] ItemStore: getItems RPC failed for item com.qrolic.reminderapp
+07-05 20:23:31.289  6638  6714 E Finsky  : [59] ItemStore: getItems RPC failed for item com.qrolic.reminderapp
+07-05 20:31:05.363   677   742 E PackageManager: Error occurred while checking alignment of package : com.qrolic.reminderapp
+07-05 20:31:05.638   677  8739 W CorePackageUpdate: Package com.qrolic.reminderapp no process with activities in it.
+07-05 20:31:05.640   677   707 I ActivityManager: Force stopping com.qrolic.reminderapp appid=10229 user=-1: killDueToPackageUpdate
+07-05 20:31:05.684   677   742 I PackageManager: Update package com.qrolic.reminderapp code path from /data/app/~~hBtfUFzlSytEIJTbgSxxZA==/com.qrolic.reminderapp-Ncv9-v3vb0Zv1c0xC9TbuA== to /data/app/~~ffXQjaDXiqC7R36lrVoqXQ==/com.qrolic.reminderapp-oD5XSGvvTWe8WJAiU656_Q==; Retain data and using new
+07-05 20:31:05.900   677   742 I PackageManager: installation completed for package:com.qrolic.reminderapp. Final code path: /data/app/~~ffXQjaDXiqC7R36lrVoqXQ==/com.qrolic.reminderapp-oD5XSGvvTWe8WJAiU656_Q==
+07-05 20:31:05.936   677   742 I ActivityManager: Force stopping com.qrolic.reminderapp appid=10229 user=0: pkg removed
+07-05 20:31:06.309  1301  1397 V MessagingReadRestrictionAllowlistMonitor: onBroadcastReceived: No AppOp changes for package: com.qrolic.reminderapp
+07-05 20:31:06.315  1301  1464 I SatelliteAppTracker: onPackageUpdateFinished : com.qrolic.reminderapp
+07-05 20:31:06.316  1301  1464 I SatelliteAppTracker: onPackageModified : com.qrolic.reminderapp
+07-05 20:31:06.375  1301  1301 D CarrierSvcBindHelper: onPackageUpdateFinished: com.qrolic.reminderapp
+07-05 20:31:06.401  1301  1464 D SatelliteAppTracker: packageName: com.qrolic.reminderapp, value: null
+07-05 20:31:06.402  1301  1464 D SatelliteAppTracker: packageName: com.qrolic.reminderapp, value: null
+07-05 20:31:06.413   677  1100 D ShortcutService: replacing package: com.qrolic.reminderapp userId=0
+07-05 20:31:06.442   677  1110 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10229, mPackageName='com.qrolic.reminderapp, mAppProcessToken='null'}
+07-05 20:31:06.442   677  1110 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10229, mPackageName='com.qrolic.reminderapp, mAppProcessToken='null'}
+07-05 20:31:06.470  1301  1301 D CarrierSvcBindHelper: onPackageModified: com.qrolic.reminderapp
+07-05 20:31:07.152  1301  1581 D ImsResolver: maybeAddedImsService, packageName: com.qrolic.reminderapp
+07-05 20:31:07.159  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:31:07.182  1301  1581 V ImsResolver: searchForImsServices: package=com.qrolic.reminderapp, users=[UserHandle{0}]
+07-05 20:31:07.485  1301  1301 D SatelliteController: packageStateChanged: package:com.qrolic.reminderapp defaultSmsPackageName: com.google.android.apps.messaging satelliteGatewayServicePackageName: 
+07-05 20:31:07.523   677   677 I Telecom : CarModeTracker: Package com.qrolic.reminderapp is not tracked.: SSH.oR@AM0
+07-05 20:31:07.618   677   824 W PackageConfigPersister: App-specific configuration not found for packageName: com.qrolic.reminderapp and userId: 0
+07-05 20:31:08.163   677   677 D AS.AudioService: received android.intent.action.PACKAGE_ADDED replacing: true archival: false for package com.qrolic.reminderapp with uid 10229
+07-05 20:31:08.385  1150  1150 I SafetyLabelChangedBroadcastReceiver: received broadcast packageName: com.qrolic.reminderapp, current user: UserHandle{0}, packageChangeEvent: UPDATE, intent user: UserHandle{0}
+07-05 20:31:08.692   677   677 I BackupManagerService: No delayed restore requests for the given dependency: com.qrolic.reminderapp
+07-05 20:31:08.929   677   677 D AS.AudioService: received android.intent.action.PACKAGE_REPLACED replacing: true archival: false for package com.qrolic.reminderapp with uid 10229
+07-05 20:31:10.141  6443  8756 I ProximityAuth: [RecentAppsMediator] Package added: (user=UserHandle{0}) com.qrolic.reminderapp
+07-05 20:31:10.567  6638  6716 I Finsky  : [61] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:31:10.876  5963  6025 I Finsky:background: [52] IQ:PSL: skipping onPackageRemoved(replacing=true) for untracked package=com.qrolic.reminderapp
+07-05 20:31:11.386  6638  6714 I Finsky  : [59] AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:31:11.809  6638  6712 I Finsky  : [57] AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:31:11.870  6638  6714 I Finsky  : [59] AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [com.qrolic.reminderapp]
+07-05 20:31:12.070  6638  6713 I Finsky  : [58] ItemStore: Not cached: com.qrolic.reminderapp
+07-05 20:31:12.502  6638  6716 I Finsky  : [61] ItemStore: Not cached: com.qrolic.reminderapp
+07-05 20:31:12.590  1885  8790 I AiAiEcho: AppIndexer Package:[com.qrolic.reminderapp] UserProfile:[0] Enabled:[true].
+07-05 20:31:12.594  1885  8790 I AiAiEcho: AppFetcherImplV2 updateApps package:[com.qrolic.reminderapp], userId:[0], reason:[package is updated.].
+07-05 20:31:12.954  7043  8797 W SQLiteLog: (28) double-quoted string literal: "com.qrolic.reminderapp"
+07-05 20:31:13.159  6638  6712 E Finsky  : [57] ItemStore: getItems RPC failed for item com.qrolic.reminderapp
+07-05 20:31:13.174  6638  6712 E Finsky  : [57] ItemStore: getItems RPC failed for item com.qrolic.reminderapp
