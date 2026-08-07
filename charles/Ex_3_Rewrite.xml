@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<rewriteSets>
+  <rewriteSet>
+    <active>true</active>
+    <name>Ex_3_Rewrite</name>
+    <hosts>
+      <locationPatterns>
+        <locationMatch>
+          <location>
+            <host>162.55.220.72</host>
+            <port>5005</port>
+            <path>/object_info_1</path>
+          </location>
+        </locationMatch>
+      </locationPatterns>
+    </hosts>
+    <rules>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue>Alex</matchValue>
+        <matchResponse>true</matchResponse>
+        <newValue>Sasha</newValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue>0.84</matchValue>
+        <matchResponse>true</matchResponse>
+        <newValue>70</newValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+      <rewriteRule>
+        <active>true</active>
+        <ruleType>7</ruleType>
+        <matchValue>175</matchValue>
+        <matchResponse>true</matchResponse>
+        <newValue>10</newValue>
+        <caseSensitive>false</caseSensitive>
+        <replaceType>2</replaceType>
+      </rewriteRule>
+    </rules>
+  </rewriteSet>
+</rewriteSets>

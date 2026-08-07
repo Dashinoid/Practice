@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<?charles serialisation-version='2.0' ?>
+<breakpoints>
+  <breakpoints>
+    <breakpoint>
+      <location>
+        <host>162.55.220.72</host>
+        <port>5005</port>
+        <path>/get_method</path>
+      </location>
+      <request>true</request>
+      <response>true</response>
+      <enabled>false</enabled>
+    </breakpoint>
+    <breakpoint>
+      <location>
+        <host>162.55.220.72</host>
+        <port>5005</port>
+        <path>/user_info_3</path>
+      </location>
+      <request>true</request>
+      <enabled>false</enabled>
+    </breakpoint>
+    <breakpoint>
+      <location>
+        <host>162.55.220.72</host>
+        <port>5005</port>
+        <path>/object_info_1</path>
+      </location>
+      <response>true</response>
+      <enabled>false</enabled>
+    </breakpoint>
+    <breakpoint>
+      <location>
+        <host>162.55.220.72</host>
+        <port>5005</port>
+        <path>/object_info_3</path>
+      </location>
+      <request>true</request>
+      <enabled>false</enabled>
+    </breakpoint>
+    <breakpoint>
+      <location>
+        <host>162.55.220.72</host>
+        <port>5005</port>
+        <path>/object_info_4</path>
+      </location>
+      <response>true</response>
+    </breakpoint>
+  </breakpoints>
+</breakpoints>
